@@ -5,7 +5,7 @@ import { SITE } from "~/config.mjs";
 
 import Hero from "~/components/widgets/Hero.astro";
 import BasicCTA from "~/components/widgets/BasicCTA.astro";
-import BasicFeatures from "~/components/widgets/BasicFeatures.astro";
+import BasicFeatures from "~/components/widgets/basic/features/BasicFeatures.astro";
 import StepsFeatures from "~/components/widgets/StepsFeatures.astro";
 import BasicFAQs from "~/components/widgets/BasicFAQs.astro";
 import TwoColsFeatures from "~/components/widgets/TwoColsFeatures.astro";
@@ -22,7 +22,11 @@ const canonical = new URL("", Astro.site);
 <Layout meta={{ title, description, canonical }}>
   <main>
     <Hero />
-    <BasicFeatures />
+    <BasicFeatures
+      title="Components"
+      header="Most Used Widgets"
+      description="Provides frequently used components for building websites using Tailwind CSS"
+    />
     <StepsLeft />
     <TwoColsFeatures />
     <StepsFeatures />
