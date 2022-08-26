@@ -1,0 +1,22 @@
+---
+import {
+  IconFacebook,
+  IconInstagram,
+  IconRSS,
+  IconTwitter,
+} from "~/components/icons";
+import FooterSocialItem from "./FooterSocialItem.astro";
+---
+
+<ul class="flex mb-6 md:order-1 md:ml-4 md:mb-0">
+  <FooterSocialItem label="Twitter" href="#"><IconTwitter /></FooterSocialItem>
+  <FooterSocialItem label="Instagram" href="#">
+    <IconInstagram />
+  </FooterSocialItem>
+  <FooterSocialItem label="Facebook" href="#">
+    <IconFacebook />
+  </FooterSocialItem>
+  <FooterSocialItem label="RSS" href="#">
+    <IconRSS />
+  </FooterSocialItem>
+</ul>

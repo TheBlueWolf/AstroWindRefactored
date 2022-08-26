@@ -1,0 +1,49 @@
+---
+import FooterLeftColumn from "./FooterLeftColumn.astro";
+import FooterMadeBy from "./FooterMadeBy.astro";
+import FooterMiddleColumn from "./FooterMiddleColumn.astro";
+import FooterMiddleColumnListItem from "./FooterMiddleColumnListItem.astro";
+import FooterRightColumn from "./FooterRightColumn.astro";
+import FooterSocials from "./FooterSocials.astro";
+const {} = Astro.props;
+---
+
+<footer>
+  <div class="max-w-6xl mx-auto px-4 sm:px-6">
+    <div
+      class="grid grid-cols-12 gap-4 gap-y-8 sm:gap-8 py-8 md:py-12 border-t border-gray-200 dark:border-slate-800"
+    >
+      <FooterLeftColumn />
+
+      <FooterMiddleColumn title="Products">
+        <FooterMiddleColumnListItem title="Web Studio" href="#" />
+        <FooterMiddleColumnListItem title="DynamicBox Flex" href="#" />
+        <FooterMiddleColumnListItem title="Programming Forms" href="#" />
+        <FooterMiddleColumnListItem title="Integrations" href="#" />
+        <FooterMiddleColumnListItem title="Command-line" href="#" />
+      </FooterMiddleColumn>
+
+      <FooterMiddleColumn title="Resources">
+        <FooterMiddleColumnListItem title="Documentation" href="#" />
+        <FooterMiddleColumnListItem title="Tutorials & Guides" href="#" />
+        <FooterMiddleColumnListItem title="Blog" href="#" />
+        <FooterMiddleColumnListItem title="Support Center" href="#" />
+        <FooterMiddleColumnListItem title="Partners" href="#" />
+      </FooterMiddleColumn>
+
+      <FooterMiddleColumn title="Company">
+        <FooterMiddleColumnListItem title="Home" href="#" />
+        <FooterMiddleColumnListItem title="About Us" href="#" />
+        <FooterMiddleColumnListItem title="Company values" href="#" />
+        <FooterMiddleColumnListItem title="Pricing" href="#" />
+        <FooterMiddleColumnListItem title="Privacy Policy" href="#" />
+      </FooterMiddleColumn>
+
+      <FooterRightColumn />
+    </div>
+    <div class="md:flex md:items-center md:justify-between py-4 md:py-8">
+      <FooterSocials />
+      <FooterMadeBy />
+    </div>
+  </div>
+</footer>
