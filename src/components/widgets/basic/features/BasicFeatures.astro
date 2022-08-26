@@ -1,7 +1,8 @@
 ---
+import SectionHeader from "../SectionHeader.astro";
 import FeaturesGrid from "./featuresGrid.astro";
 
-const { title, header, description } = Astro.props;
+const { title, description } = Astro.props;
 ---
 
 <section class="relative">
@@ -12,23 +13,9 @@ const { title, header, description } = Astro.props;
   </div>
   <div class="relative max-w-6xl mx-auto px-4 sm:px-6">
     <div class="py-4 pt-8 sm:py-6 lg:py-8 lg:pt-12">
-      <div class="mb-8 text-center">
-        <p
-          class="text-base text-blue-600 dark:text-blue-200 font-semibold tracking-wide uppercase"
-        >
-          {title}
-        </p>
-        <h2
-          class="text-4xl md:text-5xl font-bold leading-tighter tracking-tighter mb-4"
-        >
-          {header}
-        </h2>
-        <p
-          class="max-w-3xl mx-auto text-center text-xl text-gray-600 dark:text-slate-400"
-        >
-          {description}
-        </p>
-      </div>
+      <SectionHeader title={title} description={description}
+        ><slot />
+      </SectionHeader>
       <FeaturesGrid />
     </div>
   </div>
