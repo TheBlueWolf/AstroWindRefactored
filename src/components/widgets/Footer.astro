@@ -6,6 +6,8 @@ import {
   IconArrowRight,
   IconRSS,
 } from "~/components/icons";
+import FooterMiddleColumn from "./footer/FooterMiddleColumn.astro";
+import FooterMiddleColumnListItem from "./footer/FooterMiddleColumnListItem.astro";
 const {} = Astro.props;
 ---
 
@@ -31,132 +33,31 @@ const {} = Astro.props;
           </a>
         </div>
       </div>
-      <div class="col-span-6 md:col-span-3 lg:col-span-2">
-        <div class="text-gray-800 dark:text-gray-300 font-medium mb-2">
-          Products
-        </div>
-        <ul class="text-sm">
-          <li class="mb-2">
-            <a
-              class="text-gray-600 hover:text-gray-700 dark:text-gray-400 transition duration-150 ease-in-out"
-              href="#"
-              >Web Studio
-            </a>
-          </li>
-          <li class="mb-2">
-            <a
-              class="text-gray-600 hover:text-gray-700 dark:text-gray-400 transition duration-150 ease-in-out"
-              href="#"
-              >DynamicBox Flex
-            </a>
-          </li>
-          <li class="mb-2">
-            <a
-              class="text-gray-600 hover:text-gray-700 dark:text-gray-400 transition duration-150 ease-in-out"
-              href="#"
-              >Programming Forms
-            </a>
-          </li>
-          <li class="mb-2">
-            <a
-              class="text-gray-600 hover:text-gray-700 dark:text-gray-400 transition duration-150 ease-in-out"
-              href="#"
-              >Integrations
-            </a>
-          </li>
-          <li class="mb-2">
-            <a
-              class="text-gray-600 hover:text-gray-700 dark:text-gray-400 transition duration-150 ease-in-out"
-              href="#"
-              >Command-line
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-span-6 md:col-span-3 lg:col-span-2">
-        <div class="text-gray-800 dark:text-gray-300 font-medium mb-2">
-          Resources
-        </div>
-        <ul class="text-sm">
-          <li class="mb-2">
-            <a
-              class="text-gray-600 hover:text-gray-700 dark:text-gray-400 transition duration-150 ease-in-out"
-              href="#"
-              >Documentation
-            </a>
-          </li>
-          <li class="mb-2">
-            <a
-              class="text-gray-600 hover:text-gray-700 dark:text-gray-400 transition duration-150 ease-in-out"
-              href="#"
-              >Tutorials &amp; Guides
-            </a>
-          </li>
-          <li class="mb-2">
-            <a
-              class="text-gray-600 hover:text-gray-700 dark:text-gray-400 transition duration-150 ease-in-out"
-              href="#"
-              >Blog
-            </a>
-          </li>
-          <li class="mb-2">
-            <a
-              class="text-gray-600 hover:text-gray-700 dark:text-gray-400 transition duration-150 ease-in-out"
-              href="#"
-              >Support Center
-            </a>
-          </li>
-          <li class="mb-2">
-            <a
-              class="text-gray-600 hover:text-gray-700 dark:text-gray-400 transition duration-150 ease-in-out"
-              href="#"
-              >Partners
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-span-6 md:col-span-3 lg:col-span-2">
-        <div class="text-gray-800 dark:text-gray-300 font-medium mb-2">
-          Company
-        </div>
-        <ul class="text-sm">
-          <li class="mb-2">
-            <a
-              class="text-gray-600 hover:text-gray-700 dark:text-gray-400 transition duration-150 ease-in-out"
-              href="#"
-              >Home
-            </a>
-          </li>
-          <li class="mb-2">
-            <a
-              class="text-gray-600 hover:text-gray-700 dark:text-gray-400 transition duration-150 ease-in-out"
-              href="#"
-              >About us
-            </a>
-          </li>
-          <li class="mb-2">
-            <a
-              class="text-gray-600 hover:text-gray-700 dark:text-gray-400 transition duration-150 ease-in-out"
-              href="#"
-              >Company values
-            </a>
-          </li>
-          <li class="mb-2">
-            <a
-              class="text-gray-600 hover:text-gray-700 dark:text-gray-400 transition duration-150 ease-in-out"
-              href="#"
-              >Pricing
-            </a>
-          </li>
-          <li class="mb-2">
-            <a
-              class="text-gray-600 hover:text-gray-700 dark:text-gray-400 transition duration-150 ease-in-out"
-              href="#"
-              >Privacy Policy
-            </a>
-          </li>
-        </ul>
-      </div>
+
+      <FooterMiddleColumn title="Products">
+        <FooterMiddleColumnListItem title="Web Studio" href="#" />
+        <FooterMiddleColumnListItem title="DynamicBox Flex" href="#" />
+        <FooterMiddleColumnListItem title="Programming Forms" href="#" />
+        <FooterMiddleColumnListItem title="Integrations" href="#" />
+        <FooterMiddleColumnListItem title="Command-line" href="#" />
+      </FooterMiddleColumn>
+
+      <FooterMiddleColumn title="Resources">
+        <FooterMiddleColumnListItem title="Documentation" href="#" />
+        <FooterMiddleColumnListItem title="Tutorials & Guides" href="#" />
+        <FooterMiddleColumnListItem title="Blog" href="#" />
+        <FooterMiddleColumnListItem title="Support Center" href="#" />
+        <FooterMiddleColumnListItem title="Partners" href="#" />
+      </FooterMiddleColumn>
+
+      <FooterMiddleColumn title="Company">
+        <FooterMiddleColumnListItem title="Home" href="#" />
+        <FooterMiddleColumnListItem title="About Us" href="#" />
+        <FooterMiddleColumnListItem title="Company values" href="#" />
+        <FooterMiddleColumnListItem title="Pricing" href="#" />
+        <FooterMiddleColumnListItem title="Privacy Policy" href="#" />
+      </FooterMiddleColumn>
+
       <div class="col-span-12 md:col-span-3 lg:col-span-3">
         <div class="text-gray-800 dark:text-gray-300 font-medium mb-2">
           Subscribe
