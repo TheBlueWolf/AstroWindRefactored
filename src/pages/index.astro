@@ -6,12 +6,10 @@ import { SITE } from "~/config.mjs";
 import Hero from "~/components/widgets/Hero.astro";
 import BasicCTA from "~/components/widgets/BasicCTA.astro";
 import BasicFeatures from "~/components/widgets/basic/features/BasicFeatures.astro";
-import StepsFeatures from "~/components/widgets/StepsFeatures.astro";
 import BasicFAQs from "~/components/widgets/BasicFAQs.astro";
-import TwoColsFeatures from "~/components/widgets/TwoColsFeatures.astro";
-import StepsLeft from "~/components/widgets/StepsLeft.astro";
 import HighlightedPosts from "~/components/widgets/HighlightedPosts.astro";
 import Stats from "~/components/widgets/Stats.astro";
+import Steps from "~/components/widgets/basic/steps/steps.astro";
 
 const title = `${SITE.name} — Your website with Astro + Tailwind CSS`;
 const description =
@@ -27,9 +25,7 @@ const canonical = new URL("", Astro.site);
       header="Most Used Widgets"
       description="Provides frequently used components for building websites using Tailwind CSS"
     />
-    <StepsLeft />
-    <TwoColsFeatures />
-    <StepsFeatures />
+    <Steps />
     <HighlightedPosts />
     <BasicFAQs />
     <Stats />
