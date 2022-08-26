@@ -1,0 +1,26 @@
+---
+import HeaderBranding from "./HeaderBranding.astro";
+import HeaderNav from "./HeaderNav.astro";
+const {} = Astro.props;
+---
+
+<header
+  class="sticky top-0 z-40 flex-none mx-auto w-full bg-white/90 dark:bg-slate-900/90 backdrop-blur-sm border-b dark:border-b-0"
+>
+  <div
+    class="py-3 px-3 mx-auto w-full md:flex md:justify-between max-w-6xl md:px-4"
+  >
+    <HeaderBranding />
+    <HeaderNav />
+  </div>
+</header>
+
+<style is:global>
+  [data-aw-toggle-menu].expanded .line1 {
+    transform: rotate(-45deg) translate(-12px, 8px);
+  }
+
+  [data-aw-toggle-menu].expanded .line2 {
+    transform: rotate(45deg) translate(4px, -16px);
+  }
+</style>
