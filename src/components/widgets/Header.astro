@@ -1,5 +1,6 @@
 ---
 import { IconSun, IconGithub, IconMenu, IconRSS } from "~/components/icons";
+import HeaderListItem from "./header/HeaderListItem.astro";
 import Logo from "~/components/widgets/Logo.astro";
 const {} = Astro.props;
 ---
@@ -40,27 +41,9 @@ const {} = Astro.props;
       <ul
         class="flex flex-col pt-8 md:pt-0 md:flex-row md:self-center collapse w-full md:w-auto collapsed text-xl md:text-base"
       >
-        <li>
-          <a
-            class="font-medium hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out"
-            href="#"
-            >Pages
-          </a>
-        </li>
-        <li>
-          <a
-            class="font-medium hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out"
-            href="#"
-            >Resources
-          </a>
-        </li>
-        <li>
-          <a
-            class="font-medium hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out"
-            href="/blog"
-            >Blog
-          </a>
-        </li>
+        <HeaderListItem title="Pages" href="#" />
+        <HeaderListItem title="Resources" href="#" />
+        <HeaderListItem title="Blog" href="/blog" />
         <li class="md:hidden">
           <a
             class="font-bold hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out"
