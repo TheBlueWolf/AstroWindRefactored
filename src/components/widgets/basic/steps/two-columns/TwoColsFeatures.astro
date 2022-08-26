@@ -1,4 +1,5 @@
 ---
+import { LOREM_115 } from "~/utils/loremIpsum";
 import SectionHeader from "../../SectionHeader.astro";
 import Feature from "./Feature.astro";
 import FeaturePane from "./FeaturePane.astro";
@@ -24,31 +25,16 @@ const {} = Astro.props;
   </SectionHeader>
   <div class="grid mx-auto space-y-6 md:grid-cols-2 md:space-y-0">
     <FeaturePane>
-      <Feature
-        title="Integration with Tailwind CSS"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi, quam nec venenatis lobortis, mi risus tempus nulla."
-      />
-      <Feature
-        title="Ready-to-use Components"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi, quam nec venenatis lobortis, mi risus tempus nulla."
-      />
-      <Feature
-        title="Best Practices"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi, quam nec venenatis lobortis, mi risus tempus nulla."
-      />
+      <Feature title="Integration with Tailwind CSS" description={LOREM_115} />
+      <Feature title="Ready-to-use Components" description={LOREM_115} />
+      <Feature title="Best Practices" description={LOREM_115} />
     </FeaturePane>
     <FeaturePane>
-      <Feature
-        title="Excelent Page Speed"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi, quam nec venenatis lobortis, mi risus tempus nulla."
-      />
-      <Feature
-        title="Frequently updated"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi, quam nec venenatis lobortis, mi risus tempus nulla."
-      />
+      <Feature title="Excelent Page Speed" description={LOREM_115} />
+      <Feature title="Frequently updated" description={LOREM_115} />
       <Feature
         title="Open to new ideas and contributions "
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi, quam nec venenatis lobortis, mi risus tempus nulla."
+        description={LOREM_115}
       />
     </FeaturePane>
   </div>
