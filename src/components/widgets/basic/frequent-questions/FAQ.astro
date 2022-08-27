@@ -1,0 +1,16 @@
+---
+import { IconArrowDownRight } from "~/components/icons";
+const { title, paragraphs } = Astro.props;
+---
+
+<div>
+  <p class="mb-4 text-xl font-bold">
+    <IconArrowDownRight class="w-7 h-7 text-blue-500 inline-block" />
+    {title}
+  </p>
+  {
+    paragraphs.map((paragraph) => {
+      return <p class="text-gray-700 dark:text-gray-400 mb-2">{paragraph}</p>;
+    })
+  }
+</div>
