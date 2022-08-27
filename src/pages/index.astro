@@ -9,7 +9,7 @@ import BasicFAQs from "~/components/widgets/BasicFAQs.astro";
 import HighlightedPosts from "~/components/widgets/HighlightedPosts.astro";
 import Stats from "~/components/widgets/Stats.astro";
 import Steps from "~/components/widgets/basic/steps/steps.astro";
-import Hero from "~/components/widgets/basic/main-content/hero.astro";
+import MainContent from "~/components/widgets/basic/main-content/MainContent.astro";
 
 const title = `${SITE.name} — Your website with Astro + Tailwind CSS`;
 const description =
@@ -19,7 +19,7 @@ const canonical = new URL("", Astro.site);
 
 <Layout meta={{ title, description, canonical }}>
   <main>
-    <Hero />
+    <MainContent />
     <BasicFeatures
       title="Components"
       description="Provides frequently used components for building websites using Tailwind CSS"

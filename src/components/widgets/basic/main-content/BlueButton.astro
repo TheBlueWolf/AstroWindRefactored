@@ -1,0 +1,13 @@
+---
+const { title, href } = Astro.props;
+---
+
+<div>
+  <a
+    class="btn text-white bg-blue-600 hover:bg-blue-800 mb-4 sm:mb-0 font-bold"
+    href={href}
+    target="_blank"
+    rel="noopener"
+    >{title}
+  </a>
+</div>
