@@ -1,0 +1,22 @@
+---
+const { description, action, href } = Astro.props;
+---
+
+<div class="w-full lg:w-1/2 px-0 sm:px-8">
+  <div class="mb-12 lg:mb-0 pb-12 lg:pb-0 border-b lg:border-b-0">
+    <slot />
+    <p class="mb-8 text-xl text-gray-600 dark:text-slate-400">
+      {description}
+    </p>
+    <div class="w-full">
+      <a
+        class="btn bg-blue-600 hover:bg-blue-700 text-white font-bold"
+        href={href}
+        target="_blank"
+        rel="noopener"
+      >
+        {action}
+      </a>
+    </div>
+  </div>
+</div>

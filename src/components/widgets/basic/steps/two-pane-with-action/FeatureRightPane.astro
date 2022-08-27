@@ -1,0 +1,24 @@
+---
+import { LOREM_124 } from "~/utils/loremIpsum";
+import NumberedPaneItem from "./NumberedPaneItem.astro";
+---
+
+<div class="w-full lg:w-1/2 px-0 sm:px-8">
+  <ul class="space-y-12">
+    <NumberedPaneItem
+      number={1}
+      title="Responsive Elements"
+      description={LOREM_124}
+    />
+    <NumberedPaneItem
+      number={2}
+      title="Flexible Team"
+      description={LOREM_124}
+    />
+    <NumberedPaneItem
+      number={3}
+      title="Ecologic Software"
+      description={LOREM_124}
+    />
+  </ul>
+</div>

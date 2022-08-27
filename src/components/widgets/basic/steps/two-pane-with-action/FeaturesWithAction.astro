@@ -1,0 +1,29 @@
+---
+import { LOREM_230 } from "~/utils/loremIpsum";
+import FeaturePaneAction from "./FeaturePaneAction.astro";
+import FeatureRightPane from "./FeatureRightPane.astro";
+
+const {} = Astro.props;
+---
+
+<section>
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 overflow-hidden">
+    <div class="py-12 md:py-20">
+      <div class="py-4 sm:py-6 lg:py-8">
+        <div class="flex flex-wrap md:-mx-8">
+          <FeaturePaneAction
+            description={LOREM_230}
+            href="https://github.com/onwidget/astrowind"
+            action="Get Template"
+          >
+            <h2 class="mb-4 text-3xl lg:text-4xl font-bold font-heading">
+              Sed ac magna sit amet risus tristique interdum, at vel velit in
+              hac habitasse platea dictumst.
+            </h2>
+          </FeaturePaneAction>
+          <FeatureRightPane />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
