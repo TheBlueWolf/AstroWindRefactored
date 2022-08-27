@@ -5,11 +5,11 @@ import { SITE } from "~/config.mjs";
 
 import BasicCTA from "~/components/widgets/BasicCTA.astro";
 import BasicFeatures from "~/components/widgets/basic/features/BasicFeatures.astro";
-import Stats from "~/components/widgets/Stats.astro";
 import Steps from "~/components/widgets/basic/steps/steps.astro";
 import MainContent from "~/components/widgets/basic/main-content/MainContent.astro";
 import HighlightedPosts from "~/components/widgets/basic/highlights/HighlightedPosts.astro";
 import BasicFAQs from "~/components/widgets/basic/frequent-questions/BasicFAQs.astro";
+import StatGroup from "~/components/widgets/basic/metrics/StatGroup.astro";
 
 const title = `${SITE.name} — Your website with Astro + Tailwind CSS`;
 const description =
@@ -35,7 +35,7 @@ const canonical = new URL("", Astro.site);
       description="The blog will be used to display AstroWind documentation. Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS The blog does not exist yet, but very soon. Astro is a very interesting technology. Thanks."
     />
     <BasicFAQs title="Frequently Asked Questions" />
-    <Stats />
+    <StatGroup />
     <BasicCTA />
   </main>
 </Layout>
